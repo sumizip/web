@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>입력 양식 태그</title>
+</head>
+<body>
+    <h1>입력 양식</h1>
+    <p>사용자에게 정보를 입력받는 요소</p>
+    <br>
+    <hr>
+    <br>
+    <form>
+        <input type="text" name="search">
+        <input type="submit">
+    </form>
+    <br>
+    <hr>
+    <p>
+    form태그는 method 속성의 방식으로 action 속성 장소에 데이터를 전달 
+    <ul>
+        <li>Get 방식</li>
+        <ul>
+            <li>주소에 데이터를 입력해서 전달</li>
+        </ul>
+        <li>POST 방식</li>
+        <ul>
+            <li>주소 변경 없이 비밀스럽게 전달</li>
+        </ul>
+    </ul>
+    </p>
+    <h3>데이터 전달 방식</h3>
+    <h5>GET 방식</h5>
+    <p>서버의 리소스나 정보를 요청하기 위해 사용</p>
+    <p>요청을 전송할 때 URL 주소 끝에 파라미터로 포함되어 전송</p>
+    <p>Header에 포함되어 전송되므로 body를 사용하지 않음</p>
+    <p>Body를 사용하지 않으므로 대용량 데이터 전송에 제한이 있음</p>
+    <p>캐싱을 사용하여 다음 사용 시 조금 빠름 </p>
+
+    <h>기본 입력 양식 태그</h>
+    <p>input태그의 type 속성을 이용해 다양한 기본 입력 양식 생성</p>
+    <form method = "get">
+        <input type="text" name="text" value="text"><br>
+        <input type="password" name="password"><br>
+        <input type="file" name="file"><br>
+        <input type="checkbox" name="checkbox"><br>
+        <input type="radio" name="radio"><br>
+    </form>
+</body>
+</html>
