@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 단위</title>
+    <style>
+        div li:nth-child(2n) {color : beige;
+            background-color : palevioletred;
+        font-size : 120%}
+        div li:nth-child(2n+1) {color : beige;
+            background-color : skyblue;}
+        
+        div li:last-child {font-size : 150%;}
+
+</style>
+</head>
+<body>
+    <h1>CSS3 단위</h1>
+    <ul>
+        <li>키워드 단위</li>
+        <p>W3C에서 미리 정의한 단어</p>
+        <p>키워드를 입력하면 해당하는 스타일이 자동으로 적용</p>
+
+        <li>크기 단위</li>
+        <p>HTML5에서는 단위를 사용하지 않으면 CSS 스타일 오류</p>
+    </ul>
+    <hr>
+    <div>
+        <h2>다양한 크기의 단위 적용</h2>
+        <p>  % 단위 적용하기 </p>
+        <p> % 단위는 기본으로 설정된 크기를 기준으로 상대적인 크기를 지정 </p>
+        <p> 초기 설정 크기 : 100%</p>
+
+        <ul>
+            <li>전체선택자</li>
+            <li>태그선택자</li>
+            <li>아이디선택자</li>
+            <li>클래스선택자</li>
+            <li>자식선택자</li>
+            <li>후손선택자</li>
+            <li>상태선택자</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h1>색상 단위</h1>
+        <p>CSS3에서 색 표현 방법</p>
+        <ul>
+            <li>16진수 코드로 표현</li>
+            <li>10진수 코드와 RGB()로 표현</li>
+            <li>색 이름으로 표현</li>
+        </ul>
+        <h1>URL단위</h1>
+        <ul>
+            <li>이미지나 글꼴 등 리소스를 가리키는 문자열</li>
+            <li>이미지나 글골 파일을 불러올 때 사용</li>
+            <li>url('경로')</li>
+        </ul>
+    </div>
+</body>
+</html>
