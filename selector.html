@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS 선택자</title>
+    <style> 
+    * { color : darkolivegreen;}
+    h1 {background-color : salmon;
+    color : seashell; text-align : center;}
+
+    #first {font-size : 150%;}
+
+    #a {font-style : italic; color : navy;}
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="first">CSS 선택자의 용도와 사용법</h1>
+        <ul id="a">
+            <li>전체 선택자</li>
+            <li>태그 선택자</li>
+            <li>아이디 선택자</li>
+            <li>클래스 선택자</li>
+            <li>속성 선택자</li>
+            <li>후손 선택자</li>
+            <li>자손 선택자</li>
+            <li>반응 선택자</li>
+            <li>상태 선택자</li>
+            <li>구조 선택자</li>
+            <li>등위 선택자</li>
+            <li>링크 선택자</li>
+            <li>문자 선택자</li>
+            <li>부정 선택자</li>
+        </ul>
+        <h1>기본 선택자 종류</h1>
+        <ul>
+            <li>전체 선택자</li>
+            <p>HTML 페이지 내부의 태그를 모두 선택</p>
+            <p>와일드 문자(*)를 사용하여 모든 태그에 적용</p>
+            <li>태그 선택자</li>
+            <p>HTML 페이지 내부의 특정 태그를 모두 선택</p>
+            <p>태그 이름이 선택자로 사용되는 유형</p>
+            <p>선택자와 같은 이름의 모든 태그에 CSS3 스타일 시트 적용</p>
+            <p>선택자 여러 개에 속성 적용하기 : 쉼표 사용</p>
+            <li>아이디 선택자</li>
+            <p>특정 id 속성이 있는 태그를 선택. 
+                웹 표준에서 id 속성은 웹 페이지 내부에서 중복되면 안 된다는 규정이 있으므로 
+                아이디 선택자는 특정 태그 하나를 선택할 때 사용</p>
+            <li>클래스 선택자</li>
+            <p>특정 클래스가 있는 태그 선택 (클래스는 중복 가능)</p>
+        </ul>
+    </div>
+    <div>
+        <h1>클래스 선택자</h1>
+        <p>점(.)으로 시작하는 이름의 셀렉터</p>
+        <p>HTML 태그의 class 속성으로만 지정 가능</p>
+        <p>class 속성이 같은 모든 태그에 적용</p>
+        <h1>아이디 선택자</h1>
+        <p>id 속성의 목적 : 각 태그를 유일하게 구분</p>
+        <p>동일한 id 속성이 존재하지 않도록 HTML 파일을 작성하는 것이 바람직</p>
+        <p>아이디 선택자는 여러 태그 중 특정 태그에만 CSS 스타일을 적용할 때 적합</p>
+    </div>
+</body>
+</html>
