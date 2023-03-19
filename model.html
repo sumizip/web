@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3의 박스 모델</title>
+    <style>
+        div.box {
+            color : blue;
+            background-color : yellow;
+            border : 2px solid red;
+            height : 150px;
+            width : 150px;
+            margin : 150px;
+            font-family : 'Times New Roman', Times, serif;
+            box-shadow : 5px 5px 5px gray;
+            border-radius : 30px;
+            text-align : center;
+        }
+        span.box {
+            border : 2px dashed blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS3의 박스모델</h1>
+    <ul>
+        <li>HTML 태그는 사각형 박스로 다루어진다</li>
+        <li>각 HTML 태그 요소를 하나의 박스로 다룸</li>
+        <li>박스 크기, 배경, 색, 여백, 옆 박스와의 거리 등을 제어할 수 있음.</li>
+        <p>외부 여백 : margin / 외부 여백 : padding</p>
+    </ul>
+    <h2>박스 모델 구성</h2>
+    <p>웹 페이지의 레이아웃을 구성할 때 가장 중요</p>
+    <ul>
+        <li>콘텐츠(content)</li> : HTML 태그의 텍스트나 이미지가 출력되는 부분<br>
+        <li>패딩(padding)</li> : 콘텐츠를 직접 둘러싸고 있는 내부 여백<br>
+        <li>테두리(border)</li> : 패딩 외부의 테두리 (직선이나 점선 혹은 이미지로 테두리를 그릴 수 있음)
+        <li>여백(margin)</li> : 박스의 맨 바깥 영역 (테두리 바깥의 공간으로 인접한 아래위 이웃 태그의 박스와의 거리)
+    </ul>
+    <hr>
+    <h2>박스 모델의 속성</h2>
+    <table border = "2">
+        <tr>
+            <th></th>
+            <th>콘텐츠</th>
+            <th>패딩</th>
+            <th>테두리</th>
+            <th>여백</th>
+        </tr>
+        <tr>
+            <th>크기 관련 프로퍼티</th>
+            <td>width, height</td>
+            <td>padding-top, padding-right, padding-bottom, padding-left</td>
+            <td>border-top-width, border-right-width, border-bottom-width, border-left-width</td>
+            <td>margin-top, margin-right, margin-bottom, margin-left</td>
+        </tr>
+        <tr>
+            <th>크기 관련 단축 프로퍼티</th>
+            <td> - </td>
+            <td> padding </td>
+            <td> border-width</td>
+            <td> margin</td>
+        </tr>
+        <tr>
+            <th>스타일 관련 프로퍼티</th>
+            <td> - </td>
+            <td> - </td>
+            <td> border-top-style, border-right-style, border-bottom-style, border-left-style</td>
+            <td> - </td>
+        </tr>
+    </table>
+        <hr>
+        <h2>박스 모델 속성 실습</h2>
+        <div class="box">DIVDIVDIV</div>
+        <span class="box">PPPPP</span>
+    
+    
+    <hr>
+    <h2>HTML 태그는 인라인 태그와 블록 태그로 나뉨</h2>
+    <h2>박스 유형 제어 : display 속성</h2>
+    <p>태그가 화면에 보이는 방식(박스 유형)을 제어</p>
+    <ul>
+        <li>none</li> : 화면에 보이지 않음<br>
+        <li>block</li> : 블록 박스 형식으로 지정<br>
+        <li>inline</li> : 인라인 박스 형식으로 지정<br>
+        <li>inline-block</li> :  블록과 인라인의 중간 형태로 지정<br>
+    </ul>
+</body>
+
+</html>
