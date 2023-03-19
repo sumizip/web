@@ -15,6 +15,10 @@
         input:enabled {background-color : skyblue;}
         input:disabled {background-color : gray;}
         input:focus {background-color : orange;}
+    
+        .menu li {list-style : none;
+            float : left; padding : 10px}
+    
     </style>
 </head>
 <body>
@@ -37,10 +41,21 @@
             <li>상태선택자</li>
             <li>구조선택자</li>
         </ul>
+
+        <h1>상태 선택자</h1>
         <strong>사용가능</strong>
         <input type = "text" name="txt1"><br>
         <strong>사용불가능</strong>
         <input type="text" name="txt2" disabled>
+    </div>
+
+    <div class="menu">
+        <h1>구조 선택자</h1>
+        <li>메뉴1</li>
+        <li>메뉴2</li>
+        <li>메뉴3</li>
+        <li>메뉴4</li>
+        <li>메뉴5</li>
     </div>
 </body>
 </html>
