@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상클래스(pseudo-class) 선택자</title>
+    <style>
+        h3 {color : red;}
+        li:nth-child(2n) {background-color : rgb(226, 79, 103);
+            color : rgb(131, 193, 231);}
+        li:first-child {color : green;}
+        li:last-child {color : navy;}
+        li:nth-child(2n+1) {background-color: yellow;}
+        input:enabled {background-color : skyblue;}
+        input:disabled {background-color : gray;}
+        input:focus {background-color : orange;}
+    </style>
+</head>
+<body>
+    <h1>가상 클래스 선택자</h1>
+    - 어떤 조건이나 상황에서 스타일을 적용하도록 만든 셀렉터<br>
+    - 40개 이상의 많은 가상 클래스 선택자가 있음.<br>
+    - 이벤트가 발생하는 상황과 연관 
+    
+    <div>
+        <h3>선택자</h3>
+        <hr>
+        <ul>
+            <li>전체선택자</li>
+            <li>태그선택자</li>
+            <li>아이디선택자</li>
+            <li>클래스선택자</li>
+            <li>자식선택자</li>
+            <li>후손선택자</li>
+            <li>반응선택자</li>
+            <li>상태선택자</li>
+            <li>구조선택자</li>
+        </ul>
+        <strong>사용가능</strong>
+        <input type = "text" name="txt1"><br>
+        <strong>사용불가능</strong>
+        <input type="text" name="txt2" disabled>
+    </div>
+</body>
+</html>
