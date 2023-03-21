@@ -1,0 +1,25 @@
+
+body {
+    color : white;
+    background-color : rgb(33, 33, 33);
+    font-family : 'Gowun Dodum', sans-serif;
+    font-weight : bold;
+}
+
+.menu li {
+    list-style : none;
+    display : inline;
+    text-align : center;
+}
+
+div.cnt {
+    display : block;
+    margin : 100px;
+    padding : 10px;
+}
+label {
+    color : white
+}
+label p:first-child {color : gold;
+
+}
